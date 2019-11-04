@@ -1,6 +1,6 @@
 // import { HomeInitialState } from '.';
 import produce from 'immer';
-import { HOME_INFORMATION, homeActions } from './action';
+import { HOME_INFORMATION, homeActions } from './actions';
 
 export type HomeInitialState = {
 	test: string
