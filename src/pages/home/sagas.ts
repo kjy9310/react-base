@@ -1,9 +1,10 @@
-import { all, fork, takeLatest } from 'redux-saga/effects';
-import { HOME_INFORMATION } from './actions';
+import { all, fork, takeLatest, put } from 'redux-saga/effects';
+import { HOME_INFORMATION, HOME_SIDE_EFFECT } from './actions';
 import { homeActions, homeResponse } from './actions'
 
 function* home(action: homeActions) {
-	console.log("home saga called")	
+	//console.log('this is saga action :',action)
+	yield put({type:HOME_SIDE_EFFECT, payload:action.payload});	
 }
 
 function* watchHome(){
