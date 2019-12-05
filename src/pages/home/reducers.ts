@@ -9,7 +9,7 @@ export type HomeInitialState = {
 
 export const homeInitialState: HomeInitialState = {
 	test: "test",
-	sideEffect: ""
+	sideEffect: "this is default SideEffect"
 }
 
 const homeReducer = (state = homeInitialState, action: homeActions) =>{
@@ -19,7 +19,8 @@ const homeReducer = (state = homeInitialState, action: homeActions) =>{
 				draft.test = action.payload
 				break;
 			case HOME_SIDE_EFFECT:
-				draft.sideEffect= action.payload
+				//draft.sideEffect= action.payload
+				
 				break;
 			default:
 				console.log("DONE")

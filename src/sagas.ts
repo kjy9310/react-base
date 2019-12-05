@@ -3,4 +3,5 @@ import homeSaga from './pages/home/sagas';
 
 export function* combinedSaga() {
 	yield fork(homeSaga)
+	// yield all([homeSaga])
 }
