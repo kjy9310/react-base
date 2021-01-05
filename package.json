@@ -9,7 +9,7 @@
     "@types/react-redux": "^7.1.5",
     "@types/redux-saga": "^0.10.5",
     "@types/styled-components": "^4.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "immer": "^4.0.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
